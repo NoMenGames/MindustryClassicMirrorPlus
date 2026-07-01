@@ -1,14 +1,32 @@
 <!doctype html>
 <html>
        <head>
-              <title>Mindustry</title>
+              <title>Mindustry Classic - But Cool</title>
               <meta http-equiv="content-type" content="text/html; charset=UTF-8">
               <link href="styles.css" rel="stylesheet" type="text/css">
               <script src="soundmanager2-setup.js"></script>
-  			  <script src="soundmanager2-jsmin.js"></script>
+   			  <script src="soundmanager2-jsmin.js"></script>
+              <style>
+                     .subtitle-overlay {
+                            position: fixed;
+                            top: 10px;
+                            right: 10px;
+                            color: #FFD700;
+                            font-size: 20px;
+                            font-weight: bold;
+                            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+                            letter-spacing: 1px;
+                            z-index: 9999;
+                            font-family: Arial, Helvetica, sans-serif;
+                            background: rgba(0, 0, 0, 0.3);
+                            padding: 5px 10px;
+                            border-radius: 5px;
+                     }
+              </style>
        </head>
 
        <body onkeydown="preventUseOfDefaultKeys(event);" oncontextmenu="return false;">
+              <div class="subtitle-overlay">But Cool</div>
               <div align="center" id="embed-html"></div>
               <script type="text/javascript" src="html/html.nocache.js"></script>
        </body>
@@ -33,9 +51,9 @@
           		 if (keys.indexOf(event.keyCode) != -1 || event.ctrlKey){
           	       event.preventDefault();
            		 }
-         	  }
-         	  
-         	  document.getElementById('embed-html').addEventListener('mousedown', handleMouseDown, false);
+          	  }
+          	  
+          	  document.getElementById('embed-html').addEventListener('mousedown', handleMouseDown, false);
               document.getElementById('embed-html').addEventListener('mouseup', handleMouseUp, false);
        </script>
 
