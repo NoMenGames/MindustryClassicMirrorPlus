@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "proxy.js",
   "scripts": {
+    "start": "node proxy.js",
+    "build": "echo 'Build complete'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,5 +13,8 @@
   "description": "",
   "dependencies": {
     "express": "^4.21.2"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
