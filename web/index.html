@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mindustry Classic Web Launcher</title>
+    <title>Mindustry Classic Plus</title>
     <link href="styles.css" rel="stylesheet" type="text/css">
     <style>
         *{
@@ -17,11 +17,26 @@
             color:cyan;
             text-align:center;
         }
+        .title-container {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
         .title{
             min-width:300px;
             image-rendering:crisp-edges;
             display:block;
             margin:auto;
+        }
+        .subtitle {
+            color: #FFD700;
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: -10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            letter-spacing: 2px;
         }
         .save-menu{
             width:300px;
@@ -33,7 +48,10 @@
     </style>
 </head>
 <body>
-    <img src="/title.png" class="title">
+    <div class="title-container">
+        <img src="/title.png" class="title">
+        <div class="subtitle">But Cool</div>
+    </div>
     <br>
     <a href="/game.html">Launch Game</a>
     <hr>
